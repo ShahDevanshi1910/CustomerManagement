@@ -21,7 +21,10 @@ import java.util.stream.Collectors;
 @CrossOrigin(origins = "*")
 public class CustomerController {
 
-
+    @GetMapping("/Hello")
+    public String hello(){
+        return "Hello";
+    }
 
     private final String authApiUrl = "https://qa2.sunbasedata.com/sunbase/portal/api/assignment_auth.jsp";
     //private CustomerService customerService;
